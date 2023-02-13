@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  width: 100%;
   min-height: 100vh;
+color: burlywood;
+  font-weight: 900;
+  font-size:larger;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+background-color: lightslategray;
+}
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+  outline: transparent;
+}
+
+.search-button{
+background-color:rgb(88, 97, 106);
+border: none;
+padding: 10px 20px;
+color: white;
+}
+
+.recipes{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.recipe{
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px grey;
+  margin: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(0, 0, 0, 0.3);
+
+  background-image: url(./images/grilled-chicken-platter-spices-black-background-grilled-chicken-platter-spices-herbs-fast-food-hot-113427279.jpeg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 40%;
+  padding-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
