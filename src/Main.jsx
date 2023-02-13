@@ -1,6 +1,7 @@
 import React, { useEffect , useState } from 'react'
 import './App.css'
 import Recipie from './Recipie';
+import Picker from 'emoji-picker-react';
 
 const Main = () => {
 
@@ -13,6 +14,10 @@ const Main = () => {
 const [recipes , setRecipies] = useState([]);
 const [search , setSearch] = useState('');
 const [query, setquery] =useState('chicken')
+
+
+
+
 
 useEffect(()=>{
 getRecipies();
@@ -38,6 +43,7 @@ const getsearch = e =>{
 
   return (
     <div className='App'>
+      <div className='name'>My Chicken Recipe</div>
       <form onSubmit={getsearch} className="search-form">
         <input type="text" className='search-bar' value={(search)} onChange={updateSearch}/>
         <button  className='search-button' type='submit'>Submit</button>
